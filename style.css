@@ -425,3 +425,55 @@ input{
 /* #text{
   display:none;
 } */
+
+/* ---------------------------- EBoard --------------------------------*/
+
+.card{
+  border-radius: 20%;
+  background-color:#f9f9f9;
+  box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.12);
+  padding: 1rem 2rem
+}
+
+.header{
+  text-align: center;
+  width:100%;
+  margin:1em;
+
+}
+
+.headshot{
+  width:30%;
+  border-radius: 100%;
+  float: left;
+  padding: 1em;
+  display: flex;
+}
+
+.member-info{
+  float:right;
+  display: flex-box;
+}
+
+.role{
+  color:#DBC554;
+  font-size:14pt
+}
+
+.major{
+  color:#5A5377;
+  font-size:12pt;
+}
+
+.description{
+  font-size: 12pt;
+}
+
+[class*="col-"] {
+  border:#000000
+}
+
+
+
+
+
