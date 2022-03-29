@@ -238,7 +238,7 @@ h2 {
 }
 
 .container-fluid {
-  padding: 5% 10%;
+  padding: 3em 4em;
 }
 
 .colored-text {
@@ -475,6 +475,7 @@ input{
   border-right: 2px solid #5A5377;
   padding:1rem;
   padding-top: 0;
+  padding-bottom: 0;
   text-align: right;
 }
 
