@@ -3,18 +3,21 @@
 body {
   margin: 0;
 }
+
 .nav {
   padding: 0px 40px;
   height: 70px;
-  border-bottom: 2px solid rgba(90,83,119);
+  border-bottom: 2px solid rgba(90, 83, 119);
   font-family: 'Open Sans', sans-serif;
 }
+
 .logo {
   padding: 10px 0px;
   height: 50px;
   width: auto;
   float: left;
 }
+
 ul {
   list-style-type: none;
   margin: 0;
@@ -24,9 +27,11 @@ ul {
   text-align: center;
   background-color: white;
 }
+
 li {
   float: right;
 }
+
 li a {
   /* display: block; */
   padding: 8px;
@@ -44,6 +49,7 @@ li a {
   float: right;
   overflow: hidden;
 }
+
 /* Dropdown button */
 .dropdown .dropbtn {
   font-size: 16px;
@@ -56,12 +62,15 @@ li a {
   border: none;
   outline: none;
   background-color: inherit;
-  font-family: inherit; /* Important for vertical align on mobile phones */
-  margin: 0; /* Important for vertical align on mobile phones */
+  font-family: inherit;
+  /* Important for vertical align on mobile phones */
+  margin: 0;
+  /* Important for vertical align on mobile phones */
 }
 
-.nav a:hover, .dropdown:hover .dropbtn {
-  background-color:  rgba(169, 168, 169, 0.2);
+.nav a:hover,
+.dropdown:hover .dropbtn {
+  background-color: rgba(169, 168, 169, 0.2);
 }
 
 /* Dropdown content (hidden by default) */
@@ -70,9 +79,9 @@ li a {
   position: absolute;
   background-color: #f9f9f9;
   min-width: 240px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
   z-index: 1;
-  border-top: 2px solid rgba(90,83,119);
+  border-top: 2px solid rgba(90, 83, 119);
 }
 
 /* Links inside the dropdown */
@@ -91,9 +100,11 @@ li a {
   text-align: left;
   padding: 20px
 }
+
 .dropdown-content a:hover {
-  background-color:  rgba(169, 168, 169, 0.2);
+  background-color: rgba(169, 168, 169, 0.2);
 }
+
 .dropdown:hover .dropdown-content {
   display: block;
 }
@@ -110,7 +121,7 @@ li a {
 /* -------------------------------- HOME -------------------------------------*/
 
 .overlay {
-  background-color: rgba(0,0,0, .6) !important;
+  background-color: rgba(0, 0, 0, .6) !important;
 }
 
 .frontpage {
@@ -149,7 +160,7 @@ li a {
   text-align: center;
 }
 
-.SWE-motto{
+.SWE-motto {
   font-size: 30px;
   line-height: 30px;
 }
@@ -185,7 +196,7 @@ h2 {
   padding-right: 100px !important;
 }
 
-#infographic{
+#infographic {
   width: 90%;
   align-self: center;
   margin: auto;
@@ -193,7 +204,7 @@ h2 {
   padding: 10px;
 }
 
-.vertcenter-helper{
+.vertcenter-helper {
   display: inline-block;
   height: 100%;
   vertical-align: middle;
@@ -209,18 +220,18 @@ h2 {
 }
 
 /* Mission */
-.row.row-container{
+.row.row-container {
   text-align: center;
   display: block;
 }
 
-.row-heading{
+.row-heading {
   display: inline-block;
   font-weight: bold;
   font-size: 40px;
 }
 
-.mission{
+.mission {
   /* background-color: rgb(90,83,119); */
   /* background-color: rgb(219,197,84); */
   /* background-color: rgb(169,169,169); */
@@ -229,7 +240,7 @@ h2 {
   opacity: 65%;
 }
 
-.row-description{
+.row-description {
   display: block;
   width: 70%;
   margin: auto;
@@ -246,26 +257,28 @@ h2 {
 }
 
 /* Event Highlights */
-.event-highlights{
+.event-highlights {
   padding: 80px 100px !important;
 }
 
-.col-lg-4{
+.col-lg-4 {
   padding-right: 25px;
   padding-left: 25px;
 }
 
-.highlight-container{
+.highlight-container {
   padding-bottom: 16px;
 }
 
-.highlight-image-1, .highlight-image-2, .highlight-image-3{
+.highlight-image-1,
+.highlight-image-2,
+.highlight-image-3 {
   height: 320px;
   /* width: 80%; */
-  overflow:hidden;
-  display:flex;
-  justify-content:center;
-  align-items:center;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 30px;
   background-image: linear-gradient(to bottom, rgba(245, 245, 245, 0) 70%, white 100%), url('./images/2019-SWEek-of-Welcome.JPG');
   background-position: center;
@@ -275,11 +288,11 @@ h2 {
   border-top-right-radius: 15px; */
 }
 
-.highlight-image-2{
+.highlight-image-2 {
   background-image: linear-gradient(to bottom, rgba(245, 245, 245, 0) 70%, white 100%), url('./images/2019-WIE-Day.JPG');
 }
 
-.highlight-image-3{
+.highlight-image-3 {
   background-image: linear-gradient(to bottom, rgba(245, 245, 245, 0) 70%, white 100%), url('./images/2019-WE19.JPG');
   background-position-y: 80%;
 }
@@ -302,43 +315,44 @@ h2 {
   font-size: 13.5px;
 }
 
-#read-more{
+#read-more {
   padding: 25px;
   font-size: 18px;
   opacity: 50%;
 }
 
 /* Join SWE */
-.container-fluid.join-swe{
+.container-fluid.join-swe {
   padding-top: 0px;
 }
 
-.join-swe .leftcol{
+.join-swe .leftcol {
   /* background-color: 	#5E587A; */
-  background-color:#666082;
+  background-color: #666082;
   /* opacity: 90%; */
   color: white;
   padding: 7% 5% 7% 11%;
 }
 
-.join-swe .rightcol{
+.join-swe .rightcol {
   padding: 7% 8% 7% 8%;
-  background-color: rgb(169,169,169, .2);
+  background-color: rgb(169, 169, 169, .2);
 }
 
-input{
+input {
   margin: 5% 0%;
   /* border-radius: 5px; */
   border: 1px #676569 solid;
-  line-height: 33px;;
+  line-height: 33px;
+  ;
   height: 44px;
 }
 
-.row-spacer{
+.row-spacer {
   height: 30px;
 }
 
-.subscribe-form{
+.subscribe-form {
   border: 0px;
   padding: 3px;
   margin: 15px 0px;
@@ -357,35 +371,39 @@ input{
 }
 
 /* -------------------------------- JOIN -------------------------------------*/
-.socialIcon{
+.socialIcon {
   border: none;
 }
 
-#joinTitle{
-  margin-top:50px;
-  margin-bottom:50px;
+#joinTitle {
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
-.joinDiv{
-  margin-top:50px;
-  margin-bottom:50px;
+.joinDiv {
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
-.joinBtn, .joinBtn:hover, .joinBtn:active, .joinBtn:visited {
+.joinBtn,
+.joinBtn:hover,
+.joinBtn:active,
+.joinBtn:visited {
   background-color: #5A5377 !important;
   border: none !important;
 }
 
-.joinText{
-  margin-top:30px;
-  margin-bottom:30px;
+.joinText {
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
-.socialMediaIcon{
-  margin-left:20px;
-  margin-right:20px;
-  margin-top:20px;
+.socialMediaIcon {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
 }
+
 /* -------------------------------- PND -------------------------------------*/
 .center {
   display: flex;
@@ -411,12 +429,12 @@ input{
 }
 
 /* ---------------------------- INFO SESSIONS --------------------------------*/
-.infoText{
-  width:80%;
+.infoText {
+  width: 80%;
 }
 
-.question{
-  display:inline;
+.question {
+  display: inline;
 }
 
 /* #firstButton{
@@ -428,86 +446,100 @@ input{
 
 /* ---------------------------- EBoard --------------------------------*/
 
-.card{
+.card {
   border-radius: 20%;
-  background-color:#f9f9f9;
-  box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.12);
+  background-color: #f9f9f9;
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.12);
   margin-bottom: 2em;
-  padding:1em 1em
+  padding: 1em 1em
 }
 
-.header{
+.header {
   text-align: center;
-  width:100%;
-  margin:1em;
+  width: 100%;
+  margin: 1em;
 
 }
 
-.headshot{
-  width:100%;
+.headshot {
+  width: 100%;
   border-radius: 100%;
 }
 
-.member-info{
-  float:right;
+.member-info {
+  float: right;
   display: flex-box;
 }
 
-.role{
-  color:#DBC554;
-  font-size:14pt
+.role {
+  color: #DBC554;
+  font-size: 14pt
 }
 
-.major{
-  color:#5A5377;
-  font-size:12pt;
+.major {
+  color: #5A5377;
+  font-size: 12pt;
 }
 
-.description{
+.description {
   font-size: 12pt;
 }
 
 [class*="col-"] {
-  border:#000000
+  border: #000000
 }
 
-.eboard-nav{
+.eboard-nav {
   border-right: 2px solid #5A5377;
-  padding:1rem;
+  padding: 1rem;
   padding-top: 0;
   padding-bottom: 0;
   text-align: right;
 }
 
-.eboard-nav a{
+.eboard-nav a {
   text-decoration: none;
-  color:black;
+  color: black;
 }
-.eboard-nav a:hover{
+
+.eboard-nav a:hover {
   text-decoration: none;
   color: #DBC554
 }
 
-.eboard-nav div{
+.eboard-nav div {
   margin-bottom: 20px;
 }
 
-nav .active-section{
-	color: #DBC554;
-	text-decoration: underline;
+nav .active-section {
+  color: #DBC554;
+  text-decoration: underline;
   font-weight: bold;
 }
 
-.nav-fixed{
-    position: sticky;
-    top: 15%;
-    bottom: auto;
-    z-index: 10;
-  
+.nav-fixed {
+  position: sticky;
+  top: 15%;
+  bottom: auto;
+  z-index: 10;
+
 }
 
+/* ---------------------------- Awards --------------------------------*/
+.year-title {
+  color: #DBC554
+}
 
+.award {
+  display: inline;
+  width: 70%;
+  float: left;
+}
 
-
-
-
+.award-person {
+  display: inline;
+  color: #5A5377;
+  text-align: right;
+  float: right;
+  width: 29%;
+}
