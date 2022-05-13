@@ -1,0 +1,281 @@
+<html>
+    <head>
+        <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <style>
+        * {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  font-family: 'segoe ui';
+}
+
+.nav {
+  height: 5.5vw;
+  width: 100%;
+  background-color: white;
+  position: relative;
+  z-index: 999;
+  position: fixed;
+  border-bottom-style: outset;
+
+}
+
+.nav > .nav-header {
+  display: inline;
+}
+
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+  font-size: 22px;
+  color: #fff;
+  margin-top: 0.5vw;
+}
+
+.nav > .nav-btn {
+  display: none;
+}
+
+.nav > .nav-links {
+  display: inline;
+  float: right;
+  font-size: 1.4vw;
+}
+
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 1.9vw;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+.nav > .nav-links > a:hover {
+  text-decoration: underline;
+}
+
+.nav > #nav-check {
+  display: none;
+}
+
+@media (max-width:600px) {
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+    text-decoration: underline;
+  }
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #333;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+
+
+}
+    
+        .dropbtn {
+  background-color: white;
+  color: black;
+  padding: 2vw;
+  font-size: 1.4vw;
+  font-weight: 500;
+  border: none;
+  display: inline-block;
+  padding: 1.9vw;
+  text-decoration: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 1vw;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {text-decoration: underline;}
+
+.pgTitle{
+    font-size: 3vw;
+    font-weight: 500;
+    text-align: center;
+    color: black;
+    padding-top: 8%;
+
+}
+
+.myGallery {
+  display: grid;
+  grid-gap: 1vw;
+  margin-top: 3vw;
+  width: 80%;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10%;
+  margin-left: 10%;
+}
+
+.myGallery .item {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  padding: 3vw;
+  height: 15vw;
+}
+
+.gallery-text{
+  font-family: "Lato", sans-serif;
+  margin-top: 0.5vw;
+  font-size: 1.2vw;
+  font-weight: 500;
+}
+
+.gallery-title-text{
+  font-family: "Lato", sans-serif;
+  font-size: 1.2vw;
+  font-weight: 600;
+}
+
+
+    </style>
+    <body>
+
+        <div class="nav">
+            <input type="checkbox" id="nav-check">
+            <div class="nav-header">
+              <div class="nav-title">
+                <img src = "photos/swe_logo.png" style="height: 4vw;width: 7vw; margin-left: 1vw;">
+              </div>
+            </div>
+            <div class="nav-btn">
+              <label for="nav-check">
+                <span></span>
+                <span></span>
+                <span></span>
+              </label>
+            </div>
+            
+            <div class="nav-links">
+              <div class="dropdown">
+                <button class="dropbtn">About Us</button>
+                <div class="dropdown-content">
+                  <a href="#">Directorships</a>
+                  <a href="#">Board Members</a>
+                  <a href="#">Awards</a>
+                </div>
+              </div>
+              <div class="dropdown">
+                <button class="dropbtn">Events</button>
+                <div class="dropdown-content">
+                  <a href="#">Calender</a>
+                  <a href="#">Event Highlights</a>
+                </div>
+              </div>
+              <div class="dropdown">
+                <button class="dropbtn">Corporate</button>
+                <div class="dropdown-content" style="min-width: 280px;">
+                  <a href="#">Host an Information Session</a>
+                  <a href="#">Professional Networking Dinner</a>
+                  <a href="#">Sponsor SWE</a>
+                </div>
+              </div>
+              <input type="submit" value="Join" style="height: 2.7vw;width: 6vw; margin-right: 2vw; margin-left: 1vw; text-align: center;font-size: 1.4vw; background-color: rgba(90, 83, 119); border: none; border-radius: 0.6vw; color: white;">
+            </div>
+          </div>
+
+          <div class = "pgTitle">Join Us</div>
+
+          <div class ="join-wrapper" style="height: 40vw;">
+            <div class="myGallery">
+              <div class="item">
+                <div class = "gallery-text">Join our listserv to stay up to date on SWE events, on-campus activties, job opportunities, and more!</div>
+
+                <form action="#">
+                  <input type="text" id="email" name="email" placeholder = "email" style=" margin-top: 5%;height: 2.1vw; width: 15vw; box-shadow: 2px rgba(0,0,0,.5)"><br>
+                  <input type="submit" value="Join" style="height: 2.4vw;width: 6vw; margin-top: 2%;background-color: rgba(90, 83, 119); border: none; color: white; font-size: 1.2vw; border-radius: 0.5vw;"></form>
+        
+              </div>
+              <div class="item">
+                <div class = "gallery-text">Connect with us on social media to keep up on upcoming events and to learn more about SWE!</div>
+                <i class="fa fa-instagram" style="font-size: 5vw; margin-top:5%; color: rgb(242, 46, 160)"></i>
+                <i class = "fa fa-facebook" style="font-size:2.5vw;color:white;background-color:#3B5998; padding: 1vw; width: 4.5vw; margin-left: 5%; transform: translateY(-15%); border-radius: 0.4vw;"></i>
+              </div>
+
+            
+            <div class="item">
+              <div class = "gallery-title-text">Become a Committee Member</div>
+              <div class = "gallery-text">Becoming a committee member is a great way to become more involved with SWE and will give you the opportunity to network
+                with faculty and employers, or just meet more of your fellow SWE members!
+              </div>
+              <input type="submit" value="Apply" style="height: 2.7vw;width: 7vw; margin-top: 4%;background-color: rgba(90, 83, 119); border: none; color: white; font-size: 1.2vw; border-radius: 0.5vw;"></form>
+            </div>
+
+            <div class="item">
+              <div class = "gallery-title-text">Become a SWE Liason</div>
+              <div class = "gallery-text" style="margin-top:2%">Becoming a liason is a great way to work alongside leading companies, gain valuable networking experience with recruiters,
+                and meet fellow SWE members!
+              </div>
+              <input type="submit" value="Apply" style="height: 2.7vw;width: 7vw; margin-top: 8%;background-color: rgba(90, 83, 119); border: none; color: white; font-size: 1.2vw; border-radius: 0.5vw;"></form>
+            </div>
+
+          </div>
+
+    </body>
+</html>
