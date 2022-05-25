@@ -1,89 +1,264 @@
-<!doctype html>
+<html>
+    <head>
+        <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    </head>
+    <style>
 
-<html lang="en">
+* {
+  box-sizing: border-box;
+}
 
-<head>
-  <meta charset="utf-8">
-  <title>Professional Networking Dinner</title>
-  <link rel="stylesheet" href="./style.css" />
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-  <script src="scripts/jquery-3.4.1.min.js" type="text/javascript"></script>
-  <script src="scripts/validation.js" type="text/javascript"></script>
-</head>
+body {
+  margin: 0px;
+  font-family: 'segoe ui';
+}
 
-<body>
-  <h1>Professional Networking Dinner</h1>
-  <div class="intro">
-    <div class="row">
-      <div class="col">
-        <p>Held the evening before Cornell's technical career fair, the Professional
-          Networking Dinner enables company representatives and students to interact
-          in an intimate yet relaxed environment.  Students have the opportunity to
-          speak to representatives and learn more about their work, while
-          representatives have the opportunity to share their experience and see
-          first-hand just what Cornell has to offer. Please contact Rema Toopal and
-          Angela Melugin at cornellswe.pnd@gmail.com if you have any questions.</p>
+.nav {
+  height: 5.5vw;
+  width: 100%;
+  background-color: white;
+  position: relative;
+  z-index: 999;
+  position: fixed;
+  border-bottom-style: outset;
+
+}
+
+.nav > .nav-header {
+  display: inline;
+}
+
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+  font-size: 22px;
+  color: #fff;
+  margin-top: 0.5vw;
+}
+
+.nav > .nav-btn {
+  display: none;
+}
+
+.nav > .nav-links {
+  display: inline;
+  float: right;
+  font-size: 1.4vw;
+}
+
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 1.9vw;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+.nav > .nav-links > a:hover {
+  text-decoration: underline;
+}
+
+.nav > #nav-check {
+  display: none;
+}
+
+@media (max-width:600px) {
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+    text-decoration: underline;
+  }
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #333;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+
+
+}
+    
+        .dropbtn {
+  background-color: white;
+  color: black;
+  padding: 2vw;
+  font-size: 1.4vw;
+  font-weight: 500;
+  border: none;
+  display: inline-block;
+  padding: 1.9vw;
+  text-decoration: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 1vw;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {text-decoration: underline;}
+
+.pgTitle{
+    font-size: 3vw;
+    font-weight: 500;
+    text-align: center;
+    color: black;
+    padding-top: 8%;
+
+}
+.toggleContainer{
+  width: 60%;
+  margin-left: 38%;
+  margin-top: -13%;
+}
+
+
+.containerText{
+  width: 60%;
+  margin-left: 20%;
+  margin-top: 8%;
+  box-shadow: 0px 0px 25px rgba(0,0,0,0.25);
+  padding: 3%;
+  margin-bottom: 5%;
+}
+
+#companies { display:none; }
+
+.toggleText{
+  font-size: 1.7vw; 
+  text-align: center; 
+  float: left;
+  padding: 3%;
+}
+
+.toggleText:hover{
+  color: rgb(127, 127, 127);
+}
+
+    </style>
+    <body>
+
+        <div class="nav">
+            <input type="checkbox" id="nav-check">
+            <div class="nav-header">
+              <div class="nav-title">
+                <img src = "photos/swe_logo.png" style="height: 4vw;width: 7vw; margin-left: 1vw;">
+              </div>
+            </div>
+            <div class="nav-btn">
+              <label for="nav-check">
+                <span></span>
+                <span></span>
+                <span></span>
+              </label>
+            </div>
+            
+            <div class="nav-links">
+              <div class="dropdown">
+                <button class="dropbtn">About Us</button>
+                <div class="dropdown-content">
+                  <a href="#">Directorships</a>
+                  <a href="#">Board Members</a>
+                  <a href="#">Awards</a>
+                </div>
+              </div>
+              <div class="dropdown">
+                <button class="dropbtn">Events</button>
+                <div class="dropdown-content">
+                  <a href="#">Calender</a>
+                  <a href="#">Event Highlights</a>
+                </div>
+              </div>
+              <div class="dropdown">
+                <button class="dropbtn">Corporate</button>
+                <div class="dropdown-content" style="min-width: 280px;">
+                  <a href="#">Host an Information Session</a>
+                  <a href="#">Professional Networking Dinner</a>
+                  <a href="#">Sponsor SWE</a>
+                </div>
+              </div>
+              <input type="submit" value="Join" style="height: 2.7vw;width: 6vw; margin-right: 2vw; margin-left: 1vw; text-align: center;font-size: 1.4vw; background-color: rgba(90, 83, 119); border: none; border-radius: 0.6vw; color: white;">
+            </div>
+          </div>
+
+          <div class = "pgTitle">Professional Networking Dinner</div>
+
+          <div class = "pndText" style = "width: 40%;height:10vw; margin-left:10%; margin-top:8%;">The Cornell University Society of Women Engineers proudly presents our semiannual Professional Networking Dinner in the Statler Ballroom. Held the evening before Cornell's technical career fair, the Professional Networking Dinner enables company representatives and students to interact in an intimate yet relaxed environment. This allows representatives to share personal and business experiences while seeing first-hand just what Cornell has to offer. Students have the opportunity to speak to representatives for an extended period of time and to learn more about the workplace environment of many top engineering companies. We cordially invite you to join us for this unique networking opportunity.</div>
+          <div class = "pndImg" style = "width:40%; margin-left: 55vw; transform: translateY(-14vw);"> <img src = "photos/pnd_im1.jpg" height="40%" width="80%"></div>
+          
+          <!--Student vs Companies container-->
+
+        <div class = "toggleContainer">
+          <p id="toggle">
+            <span class = "toggleText">Students</span>
+            <span class = "toggleText">Comapnies</span>
+        </p>
       </div>
-      <div class="col">
-        <img src="images/pnd_im1.jpg" style="width:400px;height:240px;">
+        <div class = "containerText">
+          <div id="students"><b>Company Representatives</b><br><br>The event will cost $200.00 for the first company representative and $180.00 for each additional representative. Please note that each company is limited to a maximum of 4 company representatives. Companies may also choose to purchase an advertisement to be included in the program. Half page ads (5 in x4 in) cost $50 and full page ads (5 inx 8 in) cost $70. Dinner and four networking rotations will allow you to meet a wide variety of students in a casual and friendly atmosphere. Representatives are invited to stay an additional half hour, until 10:00pm, for further networking. This is a wonderful opportunity to get to know potential full-time and internship applicants prior to the career fair.</div>
+          <div id="companies"><b>Students</b><br><br>Tickets are $15 and may be purchased online with a credit card. The dinner consists of a four course meal catered by The Statler, with four rotations, during which you will be able to network with different companies in a relaxed environment. Additionally, there will be a short networking session prior to the start of the official rotations, and a thirty minute networking session at the end of the night so that you will have the opportunity to speak to any representatives that you may have missed, or would like to talk to again. This is a great way to meet company reps and find a summer internship, co-op, or full time job.</div>
       </div>
-    </div>
-  </div>
-
-  <!--
-  <div class="buttons">
-    <div class="row">
-      <div class="col">
-        <button type="button" class="btn btn-dark">Students</button>
-      </div>
-      <div class="col">
-        <button type="button" class="btn btn-dark">Companies</button>
-      </div>
-    </div>
-  </div>
-  -->
-
-  <div class="center">
-    <div class="row">
-      <button type="button" class="btn btn-dark">Students</button>
-      <button type="button" class="btn btn-dark">Companies</button>
-    </div>
-  </div>
-
-  <div class="desc">
-    <div class="row">
-      <div class="students hidden">
-        <p>Students</p>
-        <p>Tickets are $15 and may be purchased online with a credit card. The
-          dinner consists of a four course meal catered by The Statler, with
-          four rotations, during which you will be able to network with
-          different companies in a relaxed environment. Additionally, there
-          will be a short networking session prior to the start of the official
-          rotations, and a thirty minute networking session at the end of the
-          night so that you will have the opportunity to speak to any
-          representatives that you may have missed, or would like to talk to
-          again. This is a great way to meet company reps and find a summer
-          internship, co-op, or full time job.</p>
-      </div>
-      <div class="company hidden">
-        <p>Company Representatives</p>
-        <p>The event will cost $200.00 for the first company representative and
-          $180.00 for each additional representative. Please note that each
-          company is limited to a maximum of 4 company representatives.
-          Companies may also choose to purchase an advertisement to be included
-          in the program. Half page ads (5"x4") cost $50 and full page ads
-          (5"x 8") cost $70.</p>
-        <p>Dinner and four networking rotations will allow you to meet a wide
-          variety of students in a casual and friendly atmosphere.
-          Representatives are invited to stay an additional half hour, until
-          10:00pm, for further networking. This is a wonderful opportunity to
-          get to know potential full-time and internship applicants prior to
-          the career fair.</p>
-      </div>
-    </div>
-  </div>
-
-</body>
-
+   
+      </body>
+        <script>
+          $('#toggle > span').click(function() {
+    var ix = $(this).index();
+    
+    $('#companies').toggle( ix === 0 );
+    $('#students').toggle( ix === 1 );
+});
+        </script>
 </html>
