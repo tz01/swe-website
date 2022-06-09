@@ -543,3 +543,10 @@ nav .active-section {
   float: right;
   width: 29%;
 }
+
+/* ---------------------------- Calendar --------------------------------*/
+.calendar {
+  display: block;
+  margin: auto auto;
+  text-align: center;
+}
