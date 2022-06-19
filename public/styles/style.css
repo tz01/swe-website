@@ -18,7 +18,11 @@ body {
   float: left;
 }
 
+<<<<<<< HEAD
 /* ul {
+=======
+ul {
+>>>>>>> tz01_calendar_infosession_sponsorship
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -26,13 +30,20 @@ body {
   height: 70px;
   text-align: center;
   background-color: white;
+<<<<<<< HEAD
 } */
 
 /* li {
   float: right;
 } */
+=======
+}
 
-li a {
+li {
+  float: right;
+}
+
+>>>>>>>tz01_calendar_infosession_sponsorship li a {
   /* display: block; */
   padding: 8px;
   text-decoration: none;
@@ -451,6 +462,10 @@ input {
   box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.12);
   margin-bottom: 2em;
   padding: 1em 1em;
+  background-color: #f9f9f9;
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.12);
+  margin-bottom: 2em;
+  padding: 1em 1em
 }
 
 .header {
@@ -616,4 +631,11 @@ nav .active-section {
   left: 50%;
   transform: translate(-50%, -50%);
   color: black
+}
+
+/* ---------------------------- Calendar --------------------------------*/
+.calendar {
+  display: block;
+  margin: auto auto;
+  text-align: center;
 }
