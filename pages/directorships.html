@@ -5,30 +5,150 @@
 <head>
   <meta charset="utf-8">
   <title>Directorships</title>
-  <!-- <link rel="stylesheet" href="css/styles.css?v=1.0"> -->
-  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="../public/styles/style.css" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 </head>
 
 <body>
-  <h1>Directorships</h1>
+  <div class="nav">
 
-  <!--
-Note: turn these images into buttons
+    <a href="#home"><img class="logo" src="./SWE_logo.png" /></a>
+    <li><a id="joinbtn" href="default.asp">Join</a></li>
+    <div class="dropdown">
+      <button class="dropbtn">Corporate
+      </button>
+      <div class="dropdown-content">
+        <a href="#">Host an Information Session</a>
+        <a href="#">Professional Networking Dinner</a>
+        <a href="#">Sponsor Cornell SWE</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Events
+      </button>
+      <div class="dropdown-content">
+        <a href="#">Calendar</a>
+        <a href="#">Event Highlights</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">About Us
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="#">Directorships</a>
+        <a href="#">Board Members</a>
+        <a href="#">Awards</a>
+      </div>
+    </div>
 
-<img src="images/directorships/career_dev.jpg" style="width:400px;height:240px;">
-<img src="images/directorships/conference.jpg" style="width:400px;height:240px;">
-<img src="images/directorships/communications.jpg" style="width:400px;height:240px;">
-<img src="images/directorships/corporate_rltn.jpg" style="width:400px;height:240px;">
-<img src="images/directorships/finance.jpg" style="width:400px;height:240px;">
-<img src="images/directorships/fundraising.jpg" style="width:400px;height:240px;">
-<img src="images/directorships/student_serv.jpg" style="width:400px;height:240px;">
-<img src="images/directorships/outreach.jpg" style="width:400px;height:240px;">
--->
+  </div>
+  <div class="container-fluid">
+
+    <div class="header">
+      <h1>Directorships</h1>
+    </div>
+    <div class="row">
+
+      <div class="director-grid">
+        <div class="row">
+          <div class="directorship" id="career-dev">
+            <img src="../public/images/directorships/dr_image9.jpg" class="dir-img">
+            <div class="centered">
+              <h5>Career Development</h5>
+            </div>
+          </div>
+          <div class="directorship" id="conference">
+            <img src="../public/images/directorships/dr_image2.jpg" class="dir-img">
+            <div class="centered">
+              <h5>Conference</h5>
+            </div>
+          </div>
+          <div class="directorship" id="communications">
+            <img src="../public/images/directorships/dr_image2.jpg" class="dir-img">
+            <div class="centered">
+              <h5>Communications</h5>
+            </div>
+          </div>
+          <div class="directorship" id="corporate-relations">
+            <img src="../public/images/directorships/pnd_im2.jpg" class="dir-img">
+            <div class="centered">
+              <h5>Corporate Relations</h5>
+            </div>
+          </div>
+
+        </div>
+        <div class="row">
+          <div class="card-dir">
+
+            <h2 class="dir-header" id="content-title">Career Development</h2>
+            <div class="line"></div>
+            <div id="content">
+              <p>
+                The Career Development directorship aims to enhance SWE members'
+                skills in their career path by guiding them through various events,
+                such as the Professional Networking Dinner, etiquette lunch, and
+                industry panels. They also connect SWE to corporations and build
+                strong relationships between the students and companies. Career
+                Development's goal is to shape SWE members and guide them in finding
+                for a career.
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="directorship" id="finance">
+            <img src="../public/images/directorships/dr_image2.jpg" class="dir-img">
+            <div class="centered">
+              <h5>Finance</h5>
+            </div>
+          </div>
+          <div class="directorship" id="fundraising">
+            <img src="../public/images/directorships/dr_image4.jpg" class="dir-img">
+            <div class="centered">
+              <h5>Fundraising</h5>
+            </div>
+          </div>
+          <div class="directorship" id="student-services">
+            <img src="../public/images/directorships/dr_image6.jpg" class="dir-img">
+            <div class="centered">
+              <h5>Student Services</h5>
+            </div>
+          </div>
+          <div class="directorship" id="outreach">
+            <img src="../public/images/directorships/dr_image7.jpg" class="dir-img">
+            <div class="centered">
+              <h5>Outreach</h5>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
 
 
-  <div class="directorships">
+  </div>
+
+
+
+  <!-- Note: turn these images into buttons -->
+  <!-- 
+  <img src="images/directorships/career_dev.jpg" style="width:400px;height:240px;">
+  <img src="images/directorships/conference.jpg" style="width:400px;height:240px;">
+  <img src="images/directorships/communications.jpg" style="width:400px;height:240px;">
+  <img src="images/directorships/corporate_rltn.jpg" style="width:400px;height:240px;">
+  <img src="images/directorships/finance.jpg" style="width:400px;height:240px;">
+  <img src="images/directorships/fundraising.jpg" style="width:400px;height:240px;">
+  <img src="images/directorships/student_serv.jpg" style="width:400px;height:240px;">
+  <img src="images/directorships/outreach.jpg" style="width:400px;height:240px;"> -->
+
+
+
+  <!-- <div class="directorships">
     <div>
       <input type="button" id="careerDevelopment" name="directorship" value="Career Development">
       <span class="description hidden" for="careerDevelopment">
@@ -183,8 +303,9 @@ Note: turn these images into buttons
       </div>
     </div>
 
-  </div>
-
+  </div> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="../scripts/directorships.js"></script>
 </body>
 
 </html>

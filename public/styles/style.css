@@ -18,7 +18,7 @@ body {
   float: left;
 }
 
-ul {
+/* ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -26,11 +26,11 @@ ul {
   height: 70px;
   text-align: center;
   background-color: white;
-}
+} */
 
-li {
+/* li {
   float: right;
-}
+} */
 
 li a {
   /* display: block; */
@@ -448,10 +448,9 @@ input {
 
 .card {
   border-radius: 20%;
-  background-color: #f9f9f9;
   box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.12);
   margin-bottom: 2em;
-  padding: 1em 1em
+  padding: 1em 1em;
 }
 
 .header {
@@ -542,4 +541,79 @@ nav .active-section {
   text-align: right;
   float: right;
   width: 29%;
+}
+
+/*----------------------- Events -----------------------------------*/
+.welcome-img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1em;
+}
+
+.event-card {
+  padding: 4em 4em;
+}
+
+/* ------------------------- Directorships ------------------------*/
+.directorship {
+  height: 200px;
+  width: 24%;
+  border: 1px solid black;
+  text-align: center;
+  line-height: 200px;
+  cursor: pointer;
+  text-align: center;
+  overflow: hidden;
+  border-radius: 5px;
+  position: relative;
+  margin: auto
+}
+
+@media screen and (max-width: 600px) {
+  .director-grid {
+    width: 80%
+  }
+}
+
+.director-grid {
+  width: 60%;
+  margin: auto
+}
+
+.dir-img {
+  opacity: .4;
+  width: 100%;
+}
+
+.dir-img:hover {
+  opacity: .2;
+}
+
+
+.line {
+  background-color: #5A5377;
+  position: relative;
+  height: 3px;
+  width: 100%;
+}
+
+.dir-header {
+  color: #DBC554;
+  position: relative;
+  background-color: white;
+}
+
+.card-dir {
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.12);
+  margin: 2em 0em;
+  padding: 4em 4em;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black
 }
