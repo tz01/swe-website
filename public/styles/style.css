@@ -4,25 +4,21 @@ body {
   margin: 0;
 }
 
-.nav {
+.nav-swe {
   padding: 0px 40px;
-  height: 70px;
+  height: 72px;
   border-bottom: 2px solid rgba(90, 83, 119);
   font-family: 'Open Sans', sans-serif;
 }
 
 .logo {
   padding: 10px 0px;
-  height: 50px;
+  height: 60px;
   width: auto;
   float: left;
 }
 
-<<<<<<< HEAD
-/* ul {
-=======
 ul {
->>>>>>> tz01_calendar_infosession_sponsorship
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -30,20 +26,12 @@ ul {
   height: 70px;
   text-align: center;
   background-color: white;
-<<<<<<< HEAD
-} */
-
-/* li {
-  float: right;
-} */
-=======
 }
 
 li {
   float: right;
-}
 
->>>>>>>tz01_calendar_infosession_sponsorship li a {
+
   /* display: block; */
   padding: 8px;
   text-decoration: none;
@@ -56,13 +44,12 @@ li {
 }
 
 /* The dropdown container */
-.dropdown {
+.dropdown-nav {
   float: right;
-  overflow: hidden;
 }
 
 /* Dropdown button */
-.dropdown .dropbtn {
+.dropdown-nav .dropbtn {
   font-size: 16px;
   text-align: center;
   color: #000000;
@@ -79,8 +66,8 @@ li {
   /* Important for vertical align on mobile phones */
 }
 
-.nav a:hover,
-.dropdown:hover .dropbtn {
+.nav-swe a:hover,
+.dropdown-nav:hover .dropbtn {
   background-color: rgba(169, 168, 169, 0.2);
 }
 
@@ -91,7 +78,7 @@ li {
   background-color: #f9f9f9;
   min-width: 240px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
-  z-index: 1;
+  z-index: 2;
   border-top: 2px solid rgba(90, 83, 119);
 }
 
@@ -116,7 +103,7 @@ li {
   background-color: rgba(169, 168, 169, 0.2);
 }
 
-.dropdown:hover .dropdown-content {
+.dropdown-nav:hover .dropdown-content {
   display: block;
 }
 
@@ -458,14 +445,10 @@ input {
 /* ---------------------------- EBoard --------------------------------*/
 
 .card {
-  border-radius: 20%;
+  border-radius: 20px;
   box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.12);
-  margin-bottom: 2em;
-  padding: 1em 1em;
   background-color: #f9f9f9;
-  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.12);
   margin-bottom: 2em;
-  padding: 1em 1em
 }
 
 .header {
@@ -536,7 +519,6 @@ nav .active-section {
   top: 15%;
   bottom: auto;
   z-index: 10;
-
 }
 
 /* ---------------------------- Awards --------------------------------*/

@@ -8,42 +8,17 @@
   <link rel="stylesheet" href="../public/styles/style.css" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 
 <body>
-  <div class="nav">
-
-    <a href="#home"><img class="logo" src="./SWE_logo.png" /></a>
-    <li><a id="joinbtn" href="default.asp">Join</a></li>
-    <div class="dropdown">
-      <button class="dropbtn">Corporate
-      </button>
-      <div class="dropdown-content">
-        <a href="#">Host an Information Session</a>
-        <a href="#">Professional Networking Dinner</a>
-        <a href="#">Sponsor Cornell SWE</a>
-      </div>
-    </div>
-    <div class="dropdown">
-      <button class="dropbtn">Events
-      </button>
-      <div class="dropdown-content">
-        <a href="#">Calendar</a>
-        <a href="#">Event Highlights</a>
-      </div>
-    </div>
-    <div class="dropdown">
-      <button class="dropbtn">About Us
-        <i class="fa fa-caret-down"></i>
-      </button>
-      <div class="dropdown-content">
-        <a href="#">Directorships</a>
-        <a href="#">Board Members</a>
-        <a href="#">Awards</a>
-      </div>
-    </div>
-
-  </div>
+  <div id="nav-placeholder"></div>
+  <script>
+    $.get("nav.html", function (data) {
+      $("#nav-placeholder").replaceWith(data);
+    });
+  </script>
   <div class="container-fluid">
 
     <div class="header">

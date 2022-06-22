@@ -5,21 +5,27 @@
 <head>
   <meta charset="utf-8">
   <title>Professional Networking Dinner</title>
-  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="../public/styles/style.css" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-  <script src="scripts/jquery-3.4.1.min.js" type="text/javascript"></script>
-  <script src="scripts/validation.js" type="text/javascript"></script>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 
 <body>
+  <div id="nav-placeholder"></div>
+  <script>
+    $.get("nav.html", function (data) {
+      $("#nav-placeholder").replaceWith(data);
+    });
+  </script>
   <h1>Professional Networking Dinner</h1>
   <div class="intro">
     <div class="row">
       <div class="col">
         <p>Held the evening before Cornell's technical career fair, the Professional
           Networking Dinner enables company representatives and students to interact
-          in an intimate yet relaxed environment.  Students have the opportunity to
+          in an intimate yet relaxed environment. Students have the opportunity to
           speak to representatives and learn more about their work, while
           representatives have the opportunity to share their experience and see
           first-hand just what Cornell has to offer. Please contact Rema Toopal and
