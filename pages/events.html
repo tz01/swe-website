@@ -99,7 +99,12 @@
       </div>
     </div>
   </div>
-
+  <div id="footer-placeholder"></div>
+  <script>
+    $.get("footer.html", function (data) {
+      $("#footer-placeholder").replaceWith(data);
+    });
+  </script>
 
 
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>

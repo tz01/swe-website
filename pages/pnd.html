@@ -89,6 +89,12 @@
       </div>
     </div>
   </div>
+  <div id="footer-placeholder"></div>
+  <script>
+    $.get("footer.html", function (data) {
+      $("#footer-placeholder").replaceWith(data);
+    });
+  </script>
 
 </body>
 
