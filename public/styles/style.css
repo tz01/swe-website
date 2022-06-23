@@ -447,8 +447,8 @@ input {
 .card {
   border-radius: 20px;
   box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.12);
-  background-color: #f9f9f9;
   margin-bottom: 2em;
+  padding: 1em 1em;
 }
 
 .header {
