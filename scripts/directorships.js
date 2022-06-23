@@ -31,7 +31,7 @@ $("#finance").click(function () {
   $("#content-title").html("Finance");
   $("#content").html(" <p>The Finance directorship is in charge of all the financing within SWE. This includes all the money transactions from SWE events, ranging from information sessions, national and regional conferences, outreach/community service events, and many others.</p><p> The Finance Directorship works closely with Diversity Programs in Engineering at Cornell and the Cornell Finance Department to ensure swift transactions.We strive to provide easy payments and billing, and work to ensure that your financial experience with the Society of Women Engineers is smooth and rewarding.</p> <p>For more information about scheduling an information session with us, please refer to the following </p> <p>For more information about joining us for the Professional Networking Dinner, please refer to the following </p> ");
   let tag = document.createElement("a");
-  tag.href = "info-session.html"
+  tag.href = "infosession.html"
   tag.innerHTML = "link."
   const p = $("#content p")
   p[2].append(tag)

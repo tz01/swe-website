@@ -18,7 +18,7 @@ body {
   float: left;
 }
 
-ul {
+.list-nav {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -28,7 +28,7 @@ ul {
   background-color: white;
 }
 
-li {
+.list-nav li {
   float: right;
 
 
