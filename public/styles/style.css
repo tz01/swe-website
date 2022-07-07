@@ -1,4 +1,11 @@
+html {
+  scroll-behavior: smooth;
+}
+
 /* -------------------------------- NAV -------------------------------------*/
+.navbar {
+  border-bottom: 2px solid rgba(90, 83, 119);
+}
 
 body {
   margin: 0;
@@ -124,7 +131,7 @@ body {
 
 .frontpage {
   /* background-image: url("images/homepage-background.JPG"); */
-  background-image: url("images/homepage-background-purple-cropped.jpg");
+  background-image: url("../images/homepage-background-purple-cropped.jpg");
   background-position: 80% 20%;
   background-size: cover;
   min-height: 800px;
@@ -278,7 +285,7 @@ h2 {
   justify-content: center;
   align-items: center;
   margin-top: 30px;
-  background-image: linear-gradient(to bottom, rgba(245, 245, 245, 0) 70%, white 100%), url('./images/2019-SWEek-of-Welcome.JPG');
+  background-image: linear-gradient(to bottom, rgba(245, 245, 245, 0) 70%, white 100%), url('../images/2019-SWEek-of-Welcome.JPG');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -287,11 +294,11 @@ h2 {
 }
 
 .highlight-image-2 {
-  background-image: linear-gradient(to bottom, rgba(245, 245, 245, 0) 70%, white 100%), url('./images/2019-WIE-Day.JPG');
+  background-image: linear-gradient(to bottom, rgba(245, 245, 245, 0) 70%, white 100%), url('../images/2019-WIE-Day.JPG');
 }
 
 .highlight-image-3 {
-  background-image: linear-gradient(to bottom, rgba(245, 245, 245, 0) 70%, white 100%), url('./images/2019-WE19.JPG');
+  background-image: linear-gradient(to bottom, rgba(245, 245, 245, 0) 70%, white 100%), url('../images/2019-WE19.JPG');
   background-position-y: 80%;
 }
 
@@ -317,9 +324,20 @@ h2 {
   padding: 25px;
   font-size: 18px;
   opacity: 50%;
+  color: black;
 }
 
+#read-more:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+
 /* Join SWE */
+.join-swe {
+  padding: inherit;
+}
+
 .container-fluid.join-swe {
   padding-top: 0px;
 }
@@ -403,18 +421,19 @@ input {
 }
 
 /* -------------------------------- PND -------------------------------------*/
-.center {
-  display: flex;
-  margin: 10px;
-  position: relative;
-  justify-content: center;
-  /*left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);*/
+.tab-content {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.hidden {
-  display: none;
+.nav-pills>li>a.active {
+  background-color: #5a5377 !important;
+  color: #ffffff !important;
+}
+
+.nav-pills>li>a {
+  color: #5a5377 !important;
 }
 
 /* ---------------------------- DIRECTORSHIPS --------------------------------*/
@@ -541,7 +560,7 @@ nav .active-section {
 }
 
 /*----------------------- Events -----------------------------------*/
-.welcome-img {
+.events-img {
   width: 100%;
   border-radius: 10px;
   margin-bottom: 1em;
@@ -552,6 +571,10 @@ nav .active-section {
 }
 
 /* ------------------------- Directorships ------------------------*/
+.directorship_text {
+  font-weight: bold;
+}
+
 .directorship {
   height: 200px;
   width: 24%;
@@ -580,6 +603,7 @@ nav .active-section {
 .dir-img {
   opacity: .4;
   width: 100%;
+  height: 120%;
 }
 
 .dir-img:hover {
