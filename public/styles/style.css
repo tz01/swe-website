@@ -427,20 +427,18 @@ input {
 }
 
 /* ---------------------------- INFO SESSIONS --------------------------------*/
-.infoText {
-  width: 80%;
-}
 
 .question {
   display: inline;
 }
 
-/* #firstButton{
-  display: inline;
-} */
-/* #text{
-  display:none;
-} */
+.answer {
+  padding-right: 5em
+}
+
+.full-width {
+  width: 100%
+}
 
 /* ---------------------------- EBoard --------------------------------*/
 
@@ -631,6 +629,7 @@ footer {
   padding: 3.5rem 0rem;
   font-family: 'Open Sans', sans-serif;
   font-size: 14pt;
+  margin-top: 2em
 }
 
 .icon {
@@ -640,4 +639,28 @@ footer {
 
 .footer-link {
   text-decoration: none;
+}
+
+.footer-link :hover {
+  text-decoration: none;
+  color: #5A5377
+}
+
+.margin-auto {
+  margin: auto
+}
+
+/* ---------------------------- Sponsorship --------------------------------*/
+.sponsor-flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sponsor-img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 3em;
 }
