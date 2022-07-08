@@ -551,33 +551,26 @@ nav .active-section {
 
 /* ------------------------- Directorships ------------------------*/
 .directorship {
-  height: 200px;
-  width: 24%;
   border: 1px solid black;
   text-align: center;
-  line-height: 200px;
   cursor: pointer;
   text-align: center;
   overflow: hidden;
   border-radius: 5px;
   position: relative;
-  margin: auto
+  margin-top: 2em;
 }
 
-@media screen and (max-width: 600px) {
-  .director-grid {
-    width: 80%
+@media only screen and (max-width: 600px) {
+  .directorship {
+    height: 250px;
   }
-}
-
-.director-grid {
-  width: 60%;
-  margin: auto
 }
 
 .dir-img {
   opacity: .4;
-  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 .dir-img:hover {
@@ -602,7 +595,7 @@ nav .active-section {
   border-radius: 10px;
   box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.12);
   margin: 2em 0em;
-  padding: 4em 4em;
+  padding: 1em 2em;
 }
 
 .centered {
