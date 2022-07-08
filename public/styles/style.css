@@ -176,11 +176,6 @@ body {
   line-height: 23px;
 }
 
-h2 {
-  font-weight: bold;
-  font-size: 40px;
-}
-
 /* .subheading {
   font-size: 20px;
   padding-bottom: 20px;
@@ -422,7 +417,7 @@ input {
 
 /* -------------------------------- PND -------------------------------------*/
 .tab-content {
-  width: 50%;
+  width: 65%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -446,12 +441,16 @@ input {
 }
 
 /* ---------------------------- INFO SESSIONS --------------------------------*/
-.infoText {
-  width: 80%;
-}
-
 .question {
   display: inline;
+}
+
+.answer {
+  padding-right: 3em
+}
+
+.full-width {
+  width: 100%
 }
 
 /* #firstButton{
@@ -664,4 +663,23 @@ footer {
 
 .footer-link {
   text-decoration: none;
+}
+
+.margin-auto {
+  margin: auto
+}
+
+/* ---------------------------- Sponsorship --------------------------------*/
+.sponsor-flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sponsor-img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 3em;
 }
