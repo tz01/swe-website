@@ -1,75 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-  <title>Navbar</title>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="../public/styles/style.css" />
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 
 <body>
-
-  <nav class="navbar navbar-expand-md bg-white navbar-light fixed-top">
-    <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-    <a class="navbar-brand" href="../pages/index.html">
-      <img class="logo" src="../public/images/old_images/SWE_logo.png" />
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="collapsibleNavbar">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item dropdown px-4">
-          <a class="nav-link dropdown" href="#" id="navbardrop" data-toggle="dropdown">
-            About Us
-          </a>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="../pages/directorships.html">Directorships</a>
-            <a class="dropdown-item" href="../pages/eboard.html">Eboard</a>
-            <a class="dropdown-item" href="../pages/awards.html">Awards</a>
-          </div>
-        </li>
-        <li class="nav-item dropdown px-4">
-          <a class="nav-link dropdown" href="#" id="navbardrop" data-toggle="dropdown">
-            Events
-          </a>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="../pages/calendar.html">Calendar</a>
-            <a class="dropdown-item" href="../pages/events.html">Events Highlights</a>
-          </div>
-        </li>
-
-        <li class="nav-item dropdown px-4">
-          <a class="nav-link dropdown" href="#" id="navbardrop" data-toggle="dropdown">
-            Corporate
-          </a>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="../pages/infosession.html">Host an Information Session</a>
-            <a class="dropdown-item" href="../pages/pnd.html">Professional Networking Dinner</a>
-            <a class="dropdown-item" href="../pages/sponsorship.html">Sponsor SWE</a>
-          </div>
-        </li>
-        <li class="nav-item px-4">
-          <button type="button" class="btn btn-dark joinBtn">
-            <a style="color:inherit" href="../pages/join.html">Join</a>
-          </button>
-        </li>
-
-      </ul>
-    </div>
-  </nav>
-  <br>
-
-  <div class="container">
-    <h3>Collapsible Navbar</h3>
+  <div class="nav-swe">
+    <ul class="list-nav">
+      <a href="../pages/index.html"><img class="logo" src="../public/images/old_images/SWE_logo.png" /></a>
+      <li><a id="joinbtn" href="../pages/join.html">Join</a></li>
+      <div class="dropdown-nav">
+        <button class="dropbtn">Corporate
+        </button>
+        <div class="dropdown-content">
+          <a href="../pages/infosession.html">Host an Information Session</a>
+          <a href="../pages/pnd.html">Professional Networking Dinner</a>
+          <a href="../pages/sponsorship.html">Sponsor Cornell SWE</a>
+        </div>
+      </div>
+      <div class="dropdown-nav">
+        <button class="dropbtn">Events
+        </button>
+        <div class="dropdown-content">
+          <a href="../pages/calendar.html">Calendar</a>
+          <a href="../pages/events.html">Event Highlights</a>
+        </div>
+      </div>
+      <div class="dropdown-nav">
+        <button class="dropbtn">About Us
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="../pages/directorships.html">Directorships</a>
+          <a href="../pages/eboard.html">Board Members</a>
+          <a href="../pages/awards.html">Awards</a>
+        </div>
+      </div>
+    </ul>
   </div>
 
 </body>
+
 
 </html>
